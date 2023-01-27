@@ -1,0 +1,12 @@
+command lines
+npx tsc src/demo.ts
+# By default transpilation target is ES3
+npx tsc src/demo.ts --target es6
+npx tsc src/demo.ts --target es6 --outDir dist
+npx tsc src/*.ts --target es6 --outDir dist
+# Node & browsers just run JS
+node dist/01-hello.js
+
+npx tsc --init => create tsconfig.json
+npx tsc => checks the tsconfig.json
+npx tsc --watch => it'll be reading the .ts files on every save
